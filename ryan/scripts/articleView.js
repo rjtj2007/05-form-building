@@ -1,4 +1,5 @@
 'use strict';
+/* global articles */
 
 let articleView = {};
 
@@ -76,10 +77,11 @@ articleView.setTeasers = () => {
 // COMMENT: Where is this function called? Why?
 // PUT YOUR RESPONSE HERE
 articleView.initNewArticlePage = () => {
-  // TODO: Ensure the main .tab-content area is revealed. We might add more tabs later or otherwise edit the tab navigation.
-
+  // TODONE: Ensure the main .tab-content area is revealed. We might add more tabs later or otherwise edit the tab navigation.
+  $('.tab-content').show();
 
   // TODO: The new articles we create will be copy/pasted into our source data file.
+  
   // Set up this "export" functionality. We can hide it for now, and show it once we have data to export.
 
   $('#article-json').on('focus', function(){
@@ -87,7 +89,9 @@ articleView.initNewArticlePage = () => {
   });
 
   // TODO: Add an event handler to update the preview and the export field if any inputs change.
-
+$('#new-article-form').on('change', function(){
+    console.log('hola');
+  });
 };
 
 articleView.create = () => {
