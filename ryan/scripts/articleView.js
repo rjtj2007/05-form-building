@@ -88,13 +88,13 @@ articleView.initNewArticlePage = () => {
     this.select();
   });
 
-  // TODO: Add an event handler to update the preview and the export field if any inputs change.
+  // TODONE: Add an event handler to update the preview and the export field if any inputs change.
 $('#new-article-form').on('change', articleView.create);
   console.log('new article form working');
 };
 
 articleView.create = () => {
-  // TODO: Set up a variable to hold the new article we are creating.
+  // TODONE: Set up a variable to hold the new article we are creating.
   // Clear out the #articles element, so we can put in the updated preview
   $('#articles').empty();
   
